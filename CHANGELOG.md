@@ -1,0 +1,17 @@
+# Changelog
+
+## [Unreleased]
+
+### Added
+- Initial project setup
+
+## [1.0.0] — 2026-06-15
+
+### Added
+- Initial release of cortex-plugin-supabase
+- `supabase_query` — Run raw SQL queries
+- `supabase_list_tables` — List database tables
+- `supabase_create_table` — Create tables with column definitions
+- `supabase_manage_rls` — Manage Row-Level Security policies
+- `supabase_deploy_function` — Deploy edge functions
+- `supabase_manage_storage` — Manage storage buckets and files
