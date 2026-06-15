@@ -81,7 +81,11 @@
           "type": "string",
           "description": "RLS action to perform",
           "required": true,
-          "options": ["list", "enable", "disable"]
+          "options": [
+            "list",
+            "enable",
+            "disable"
+          ]
         },
         {
           "name": "policy",
@@ -125,7 +129,11 @@
           "type": "string",
           "description": "Storage action to perform",
           "required": true,
-          "options": ["list_buckets", "create_bucket", "upload_file"]
+          "options": [
+            "list_buckets",
+            "create_bucket",
+            "upload_file"
+          ]
         },
         {
           "name": "bucket_name",
@@ -148,40 +156,44 @@
       ]
     }
   ],
-  "ui": [
-    {
-      "section": "Supabase",
-      "fields": [
-        {
-          "key": "supabaseUrl",
-          "label": "Supabase URL",
-          "type": "text",
-          "description": "Your Supabase project URL (e.g. https://xyz.supabase.co)",
-          "required": true
-        },
-        {
-          "key": "supabaseAnonKey",
-          "label": "Supabase Anon Key",
-          "type": "secret",
-          "description": "Your Supabase anonymous/public key",
-          "required": true
-        },
-        {
-          "key": "supabaseServiceKey",
-          "label": "Supabase Service Key",
-          "type": "secret",
-          "description": "Your Supabase service_role key (admin access)",
-          "required": true
-        }
-      ]
-    }
-  ],
+  "ui": {
+    "settings": [
+      {
+        "section": "Supabase",
+        "fields": [
+          {
+            "key": "supabaseUrl",
+            "label": "Supabase URL",
+            "type": "text",
+            "description": "Your Supabase project URL (e.g. https://xyz.supabase.co)",
+            "required": true
+          },
+          {
+            "key": "supabaseAnonKey",
+            "label": "Supabase Anon Key",
+            "type": "secret",
+            "description": "Your Supabase anonymous/public key",
+            "required": true
+          },
+          {
+            "key": "supabaseServiceKey",
+            "label": "Supabase Service Key",
+            "type": "secret",
+            "description": "Your Supabase service_role key (admin access)",
+            "required": true
+          }
+        ]
+      }
+    ]
+  },
   "dependencies": {},
   "peerDependencies": {
     "cortex": ">=1.0.0"
   },
   "aiDisclosure": {
-    "tools": ["Claude Code (Anthropic)"],
+    "tools": [
+      "Claude Code (Anthropic)"
+    ],
     "humanReview": true
   }
 }
