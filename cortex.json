@@ -1,6 +1,6 @@
 {
   "name": "cortex-plugin-supabase",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Full Supabase integration: auth, database, storage, edge functions",
   "kind": "esm",
   "entryPoint": "mod.ts",
