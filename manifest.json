@@ -1,6 +1,6 @@
 {
   "name": "cortex-plugin-supabase",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Full Supabase integration: auth, database, storage, edge functions",
   "kind": "esm",
   "entryPoint": "mod.ts",
@@ -8,7 +8,7 @@
   "author": "CortexPrism",
   "license": "MIT",
   "repository": "https://github.com/CortexPrism/cortex-plugin-supabase",
-  "homepage": "",
+  "homepage": "https://github.com/CortexPrism/cortex-plugin-supabase",
   "capabilities": [
     "tools",
     "network:fetch",
@@ -37,7 +37,7 @@
           "type": "string",
           "description": "Database schema name",
           "required": false,
-          "defaultValue": "public"
+          "default": "public"
         }
       ]
     },
@@ -62,7 +62,7 @@
           "type": "string",
           "description": "Database schema name",
           "required": false,
-          "defaultValue": "public"
+          "default": "public"
         }
       ]
     },
@@ -81,7 +81,7 @@
           "type": "string",
           "description": "RLS action to perform",
           "required": true,
-          "options": [
+          "enum": [
             "list",
             "enable",
             "disable"
@@ -116,7 +116,7 @@
           "type": "boolean",
           "description": "Whether to require JWT verification",
           "required": false,
-          "defaultValue": true
+          "default": true
         }
       ]
     },
@@ -129,7 +129,7 @@
           "type": "string",
           "description": "Storage action to perform",
           "required": true,
-          "options": [
+          "enum": [
             "list_buckets",
             "create_bucket",
             "upload_file"

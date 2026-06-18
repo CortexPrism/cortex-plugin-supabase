@@ -14,6 +14,7 @@ async function resolveConfig(ctx: PluginContext): Promise<Record<string, string>
 }
 
 export async function onLoad(ctx: PluginContext): Promise<void> {
+  ctx.logger.info(`[cortex-plugin-supabase] Loaded`);
   config = await resolveConfig(ctx);
 }
 
