@@ -1,6 +1,6 @@
 {
   "name": "cortex-plugin-supabase",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Full Supabase integration: auth, database, storage, edge functions",
   "kind": "esm",
   "entryPoint": "mod.ts",
@@ -37,7 +37,7 @@
           "type": "string",
           "description": "Database schema name",
           "required": false,
-          "default": "public"
+          "defaultValue": "public"
         }
       ]
     },
@@ -62,7 +62,7 @@
           "type": "string",
           "description": "Database schema name",
           "required": false,
-          "default": "public"
+          "defaultValue": "public"
         }
       ]
     },
@@ -116,7 +116,7 @@
           "type": "boolean",
           "description": "Whether to require JWT verification",
           "required": false,
-          "default": true
+          "defaultValue": true
         }
       ]
     },
@@ -188,7 +188,7 @@
   },
   "dependencies": {},
   "peerDependencies": {
-    "cortex": ">=1.0.0"
+    "cortex": ">=0.51.0"
   },
   "aiDisclosure": {
     "tools": [
